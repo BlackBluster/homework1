@@ -13,25 +13,28 @@
 		<h1>My blog</h1>
 		<a href="http://www.google.com/">Google</a>
 		<a href="http://www.yahoo.com.tw/">Yahoo</a>
+		<a herf="http://www.pchome.com.tw/">Pchome</a>
 	</header>
 	<figure>
 		<img src="tohka.gif " width="25%"/>
 		<h2>十香</h2>
 	</figure>
-	<form action="http://www.meigic.tw/test.php">
+	<form method="post" action="http://www.meigic.tw/test.php" enctype="multipart/form-data">
 		<div>
-
-			<label>Nickname:</label>
-			<input name="nickname" type="text" />
+			<label for ="nickname"> Nickname:</label>
+			<input id="nickname"  name="nickname" type="text" placeholder="請輸入暱稱" />
 		</div>
 		<div>
-			<label>Email:</label>
-			<input name="email "type="email" />
+			<label for="email">Email:</label>
+			<input id="email" name="email" type="email" value="test@email.com" />
 		</div>
 		<div>
-			<label>Password:</label>
-			<input name="password" type="Password" />
+			<label for="password"> Password:</label>
+			<input id="password" name="password" type="Password" />
 		</div>
+		<div>
+		<label for="pic">pic:</label>
+		<input id="pic" name="pic_file" type="file" />
 		<div>
 			<button>Sign up</button>
 		</div>
